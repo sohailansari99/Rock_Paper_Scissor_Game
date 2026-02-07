@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rock_paper_scissor_game </title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+
+        }
+        body{
+            background-color: #c1bbbb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        .container{
+            border: 2px solid rgb(253, 250, 250);
+            margin-top: 10%;
+            padding: 180px;
+            border-radius: 50px;
+            box-shadow: 40px;
+            background-color: #efe7e7;
+        }
+        .container h1{
+            margin-bottom: 10%;
+            
+        }
+        .btn {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .btn button {
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            background-color: #dd1809;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn button:hover {
+            background-color: #ff0000;
+            transform: scale(1.08);
+        }
+        .btn button:active {
+            transform: scale(0.95);
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1> Rock <span style="color: #dd1809;"> Paper </span> Scissor Game </h1>
+        <div class="btn">
+            <button onclick="
+                const randomvariable = Math.random()
+                let cmpt = ''
+                if(randomvariable >= 0 && randomvariable < 1/3){
+                    cmpt='Rock'
+                }else if(randomvariable >= 1/3 && randomvariable < 2/3){
+                    cmpt = 'Paper'
+                }else if(randomvariable >= 2/3 && randomvariable < 1){
+                    cmpt = 'Scissor'
+                }
+                let res = ''
+                if(cmpt === 'Rock'){
+                    res = 'Tie'
+                }else if(cmpt==='Paper'){
+                    res = 'You loose...'
+                }else if(cmpt==='Scissor'){
+                    res = 'You Win hurryyy... '
+                }
+                alert (`You Picked Rock, Computer Picked ${cmpt}.${res}`)
+            "> Rock </button>
+            <button onclick="
+                const randomvariable1 = Math.random()
+                let cmpt1 = ''
+                if(randomvariable1 >= 0 && randomvariable1 < 1/3){
+                    cmpt1='Rock'
+                }else if(randomvariable1 >= 1/3 && randomvariable1 < 2/3){
+                    cmpt1 = 'Paper'
+                }else if(randomvariable1 >= 2/3 && randomvariable1 < 1){
+                    cmpt1 = 'Scissor'
+                }
+                let res1 = ''
+                if(cmpt1 === 'Rock'){
+                    res1 = 'Tie'
+                }else if(cmpt1==='Paper'){
+                    res1 = 'You loose...'
+                }else if(cmpt1==='Scissor'){
+                    res1 = 'You Win hurryyy... '
+                }
+                alert (`You Picked Paper, Computer Picked ${cmpt1}.${res1}`)
+            "> paper </button>
+            <button onclick="
+                const randomvariable2 = Math.random()
+                let cmpt2 = ''
+                if(randomvariable2 >= 0 && randomvariable2 < 1/3){
+                    cmpt2='Rock'
+                }else if(randomvariable2 >= 1/3 && randomvariable2 < 2/3){
+                    cmpt2 = 'Paper'
+                }else if(randomvariable2 >= 2/3 && randomvariable2 < 1){
+                    cmpt2 = 'Scissor'
+                }
+                let res2 = ''
+                if(cmpt2 === 'Rock'){
+                    res2 = 'Tie'
+                }else if(cmpt2==='Paper'){
+                    res2 = 'You loose...'
+                }else if(cmpt2==='Scissor'){
+                    res2 = 'You Win hurryyy... '
+                }
+                alert (`You Picked Scissor, Computer Picked ${cmpt2}.${res2}`)
+            "> Scissor </button>
+        </div>
+    </div>
+    
+</body>
+</html>
